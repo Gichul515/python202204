@@ -1,0 +1,327 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "PythonDay3.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOAYHqkmhOstcr/uowoxigJ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Gichul515/python202204/blob/main/PythonDay2.ipynb%20%20%EC%88%99%EC%A0%9C%20%EC%97%B0%EC%8A%B5\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lOlqMQYs6iBI",
+        "outputId": "5ef0b393-f665-482d-d444-93741d3e84ea"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "My name is james\n"
+          ]
+        }
+      ],
+      "source": [
+        "print('My name is {}'.format('james'))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print('My name is {0}'.format('james'))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bV3514oV-AsT",
+        "outputId": "9ec87b45-4640-4e13-f4a3-d8474b9683bc"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "My name is james\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f'My name is {name}.I\\'m {age} years old')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 174
+        },
+        "id": "V_B3Oc1q-LFx",
+        "outputId": "22791c46-5217-4663-bd0a-1a74e98da7d2"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-8-8c449d7fc7df>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34mf'My name is {name}.I\\'m {age} years old'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m: name 'name' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "zipcode = '06236'\n",
+        "print('우편번호: {}'.format(zipcode))\n",
+        "\n",
+        "address = '''서울특별시 강남구\n",
+        "테헤란로146'''\n",
+        "\n",
+        "print('주소:{addr}'.format(addr=address))\n",
+        "\n",
+        "tel1,tel2,tel3= '02', '538', '0021'\n",
+        "print('연락처:{0}-{1}-{2}'. format(tel1,tel2,tel3))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MIQMcogP_ThF",
+        "outputId": "d222c71b-54a2-4034-b288-3ea1da8b465f"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "우편번호: 06236\n",
+            "주소:서울특별시 강남구\n",
+            "테헤란로146\n",
+            "연락처:02-538-0021\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "rhda3Qc6EUlT"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = 25\n",
+        "print(f'내년엔 {age+1}살이 됩니다.') "
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aFKQECkRARRd",
+        "outputId": "8e5c7d21-ac07-4640-dc0c-8e5a5416fd65"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "내년엔 26살이 됩니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 174
+        },
+        "id": "OHwFzyUbARWv",
+        "outputId": "f69c7bb6-62c7-4657-869a-c91b085419da"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-10-0d933d3f4e8e>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34mf'My name is {name} I\\'m {age} years old'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m: name 'name' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "who ='you'\n",
+        "how = 'happy'\n",
+        "print(f'{who} make me {how}')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "at4U1xW1EVab",
+        "outputId": "22fe5409-4778-4f6a-c5d9-41f279d95d68"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "you make me happy\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age=25\n",
+        "print(f'{age+1}살이 됩니다')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "J4GLnz3QEoHU",
+        "outputId": "ec27b333-dde7-48cc-d3cc-b32f695dfe23"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "26살이 됩니다\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "-5Cc1vc8GdMq"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "piLXf1J5GfaF"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "zipcode = '06236'\n",
+        "print('우편번호: {}'.format(zipcode))\n",
+        "\n",
+        "address='''서울특별시 강남구\n",
+        "테헤란로146'''\n",
+        "\n",
+        "print('주소: {addr}'. format(addr=address))\n",
+        "\n",
+        "tel1,tel2,tel3='02', '538' , '0021'\n",
+        "print('연락처: {0}-{1}-{2}'.format(tel1,tel2,tel3))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e9W3gdBOE167",
+        "outputId": "b31d6b62-2a5f-4e20-9c15-da03b81fa734"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "우편번호: 06236\n",
+            "주소: 서울특별시 강남구\n",
+            "테헤란로146\n",
+            "연락처: 02-538-0021\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "EvyMymqU_tEV"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "sWs0QogvBBpv"
+      }
+    }
+  ]
+}
